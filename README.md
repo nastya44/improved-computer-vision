@@ -1,6 +1,9 @@
 # Gradient-free deep learning
 
-<img align="right" width="300" height="200" src="./docs/thumbnail.png">
+<img align="right" width="450" height="300" src="./docs/thumbnail.png">
+
+![Python](./docs/ico/python.svg)
+![Pytorch](./docs/ico/pytorch.svg)
 
 The project from the discipline "Applied Modeling" combines new trends in optimization theory with relevant deep learning problems.
 
