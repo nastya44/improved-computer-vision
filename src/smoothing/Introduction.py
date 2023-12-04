@@ -21,7 +21,7 @@ trained on the [COCO dataset](https://www.v7labs.com/blog/coco-dataset-guide).
 """
 )
 st.video("./assets/yolo_demo_crop.mp4")
-st.markdown(
+st.caption(
     "*Object detection problem demo video from [Ultralytics](https://s3.amazonaws.com/media-p.slid.es/videos/1963163/Y29RCFLg/yolo_demo_crop.mp4)*"
 )
 
@@ -58,4 +58,3 @@ st.markdown(
 11. Duchi, J. C., Jordan, M. I., Wainwright, M. J., & Wibisono, A. (2015). Optimal Rates for Zero-Order Convex Optimization: The Power of Two Function Evaluations. *IEEE Transactions on Information Theory, 61(5),* 2788–2806. [https://doi.org/10.1109/TIT.2015.2409256](https://doi.org/10.1109/TIT.2015.2409256)
 """
 )
-
