@@ -43,4 +43,3 @@ st.info("**TODO:** Add `ADAM` method description with $\\LaTeX$ formulas")
 
 st.header("Finite-difference smoothing algorithm (FinD)")
 st.info("**TODO:** Add a proposed `FinD` method description with $\\LaTeX$ formulas")
-

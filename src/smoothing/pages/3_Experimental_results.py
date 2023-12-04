@@ -1,3 +1,5 @@
+import numpy as np
+import pandas as pd
 import streamlit as st
 
 
@@ -10,4 +12,8 @@ st.set_page_config(
 
 
 st.title("Experimental results")
+st.header("Train loss")
+st.line_chart(pd.read_csv("./data/losses.csv"))
 
+st.header("Train accuracy")
+st.line_chart(pd.read_csv("./data/accuracy.csv"))
