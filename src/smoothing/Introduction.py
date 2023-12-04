@@ -37,8 +37,12 @@ st.markdown(
 st.header("Motivation")
 st.markdown(
     """
- - The problem of image segmentation is widely recognized in the field of automation.
- - One of the most significant applications of this technology in Ukraine at present is in the area of **military technology**: specifically, automatic targeting for unmanned aerial vehicles (UAVs) or artillery systems.
+ - The problem of image segmentation is widely recognized in the field of automation;
+ - One of the most significant applications of this technology in Ukraine at present is in the area of **military technology**: 
+specifically, automatic targeting for unmanned aerial vehicles (UAVs) or artillery systems;
+ - Gradient algorithms in deep learning offer faster convergence and more efficient computation compared to zero-order optimization methods, 
+particularly in high-dimensional spaces.
+ - Finite-difference methods maintain these advantages, but contrast, the gradient encounters difficulties in navigating nonsmooth functions.
 """
 )
 
