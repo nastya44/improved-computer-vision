@@ -1,0 +1,21 @@
+[server]
+
+# If false, will attempt to open a browser window on start.
+headless = false
+
+# Enables support for Cross-Origin Resource Sharing (CORS) protection, for
+# added security.
+enableCORS = true
+
+# The port where the server will listen for browser connections.
+port = 8080
+
+# Automatically rerun script when the file is modified on disk.
+runOnSave = true
+
+
+[browser]
+
+# Whether to send usage statistics to Streamlit.
+gatherUsageStats = false
+
