@@ -10,6 +10,25 @@ st.set_page_config(
 
 
 st.title("Algorithms overview")
+st.header("Convolutional Neural Network")
+st.image("./assets/mnist_conv.gif", caption="How convolution works on the MNIST dataset", use_column_width=True)
+st.markdown(
+    """A Convolutional Neural Network (CNN) is a deep learning model often used for analyzing visual imagery.
+It operates by moving small filters across the input image.
+These filters perform element-wise multiplication with the part of the image they cover and sum up these products.
+This process creates feature maps that highlight important features in the image.
+The mathematics behind this involves convolution operations, where a filter is applied to the input data.
+During training, the network learns the best filter values using a process called backpropagation, which involves
+calculating the gradient of the error with respect to the filter weights and adjusting them to reduce the error.
+This makes CNNs effective for tasks like image recognition and classification.
+
+Mathematically, this operation can be represented as $ (f * g)(t) = \\int_{-\\infty}^{\\infty} f(\\tau)g(t-\\tau) d\\tau $ 
+for continuous domains, or $ (f * g)[n] = \\sum_{m=-M}^{M} f[m]g[n-m] $ for discrete domains, where $ f $ and $ g $ 
+are functions (or arrays in discrete cases) representing the input image and the filter, respectively.
+"""
+)
+
+
 st.header("Stochastic gradient descent")
 st.markdown(
     """
@@ -46,6 +65,7 @@ The momentum term $ \\gamma $ is usually set to 0.9 or a similar value.
 As mentioned in previous sections, SGD has trouble navigating ravines, i.e. areas where the surface curves much more steeply in one dimension than in another, which are common around the local minimum. Momentum helps accelerate SGD in the relevant direction and dampens oscillations.
 """
 )
+st.image("./assets/sgd_vs_momentum.png", caption="SGD and Momentum trajectory", use_column_width=True)
 
 st.header("Nesterov accelerated gradient (NAG)")
 st.markdown(    
