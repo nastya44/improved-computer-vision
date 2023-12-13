@@ -11,9 +11,12 @@ st.set_page_config(
 
 
 st.title("Experimental results")
-st.header("Train loss")
-st.line_chart(pd.read_csv("./data/losses.csv"))
+st.header("Test loss")
+df = pd.read_excel("./data/results.xlsx")
+df.set_index('Method', inplace=True)
+st.write(df)
 
-st.header("Train accuracy")
-st.line_chart(pd.read_csv("./data/accuracy.csv"))
-
+st.header("Test accuracy")
+df = pd.read_excel("./data/accuracy.xlsx")
+df.set_index('Method', inplace=True)
+st.write(df)
