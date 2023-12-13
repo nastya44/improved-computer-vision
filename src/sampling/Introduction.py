@@ -16,8 +16,8 @@ st.markdown(
 
 The project, under the "Applied Modeling" course, integrates emerging trends in optimization theory with pertinent challenges in deep learning. The objective is 
 to implement a modified gradient descent algorithm, as described in the [paper](https://epubs.siam.org/doi/10.1137/030601296), within the widely-used deep learning framework, 
-[PyTorch](https://pytorch.org/). This implementation will be applied to address the image classification problem in [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), 
-trained on the [COCO dataset](https://www.v7labs.com/blog/coco-dataset-guide).
+[PyTorch](https://pytorch.org/). This implementation will be applied to address the image classification problem in [Convolutional Neural Networks](https://www.researchgate.net/publication/2453996_Convolutional_Networks_for_Images_Speech_and_Time-Series), 
+trained on the [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html).
 """
 )
 st.video("./assets/yolo_demo_crop.mp4")
@@ -30,7 +30,7 @@ st.markdown(
     """
  1. Examine the most widely used gradient optimization algorithms;
  2. Develop and apply a sampling gradient optimization algorithm for **Backpropagation**;
- 3. Train and assess the deep learning model for object segmentation: [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html).
+ 3. Train and assess the deep learning model for the image classification problem: [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html).
 """
 )
 
