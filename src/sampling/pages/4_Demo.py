@@ -5,6 +5,11 @@ import numpy as np
 
 from PIL import Image
 
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+
 classes = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
 
 
@@ -48,11 +53,9 @@ if uploaded_photo is not None:
             # Perform inference
             output = ort_session.run(None, {'input': img.astype(np.float32)})
 
-
             # Convert the output to class label
             predicted_class = np.argmax(output)
+            predicted_prob = np.around(sigmoid(output[0][0][predicted_class]) * 100.0, decimals=2)
 
-            st.write("Predicted Class:", classes[predicted_class])
+            st.write(f"Predicted Class: **{classes[predicted_class]}**, confidence: `{predicted_prob}`%")
 
-            for lable, value in zip(classes, output[0][0]):
-                st.write(lable, value)
