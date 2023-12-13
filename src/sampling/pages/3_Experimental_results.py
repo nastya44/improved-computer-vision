@@ -21,12 +21,12 @@ st.markdown(
     """, unsafe_allow_html=True) 
 
 
-methods_score = {"sgd_score": 0.806, "momentum_score": 0.811, "nag_score": 0.835, "gs_sgd_score": 0.828, "gs_momentum_score": 0.841, "gs_nag_score": 0.857}
+methods_score = {"sgd_score": 0.831, "momentum_score": 0.852, "nag_score": 0.858, "gs_sgd_score": 0.838, "gs_momentum_score": 0.867, "gs_nag_score": 0.864}
 
 # Sample data
 data = {
     'Methods Name': ['Stochastic gradient descent (SGD)', 'Momentum', 'Nesterov accelerated gradient (NAG)', 'SGD + Gradient Sampling', 'Momentum + Gradient Sampling', 'NAG + Gradient Sampling'],
-    'Final losses': [0.401, 0.376, 0.330, 0.356, 0.301, 0.279],
+    'Final losses': [0.4122, 0.3166, 0.3022, 0.4013, 0.2979, 0.2998],
     #'Final accuracies': [str(round(methods_score.get("sgd_score") * 100, 1)) + '%', '81.1%', '83.5%', '82.8%', '84.1%', '85.7%']
 }
 
