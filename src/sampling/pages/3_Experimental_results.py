@@ -10,9 +10,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-
 st.title("Experimental results")
-
 st.markdown(
     """<style>
         td {text-align: center !important}
@@ -21,6 +19,21 @@ st.markdown(
     """, unsafe_allow_html=True) 
 
 
+st.header("Dataset")
+st.image("./assets/cifar.png", caption="CIFAR-10 data sample", use_column_width=True)
+st.markdown(
+    """The CIFAR-10 dataset is a widely-used dataset in the field of machine learning and computer vision. 
+It consists of 60,000 32x32 color images in 10 different classes, with 6,000 images per class.
+The dataset is divided into 50,000 training images and 10,000 test images.
+The classes in the dataset represent everyday objects such as airplanes, cars, birds, cats, deer, dogs, frogs,
+horses, ships, and trucks. The simplicity and small size of the images in the CIFAR-10 dataset make it a popular
+choice for testing and developing machine learning algorithms, especially for image recognition and classification tasks.
+The dataset was created by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton from the University of Toronto.
+"""
+)
+
+
+st.header("Final accuracy and loss")
 methods_score = {"sgd_score": 0.831, "momentum_score": 0.852, "nag_score": 0.858, "gs_sgd_score": 0.838, "gs_momentum_score": 0.867, "gs_nag_score": 0.864}
 
 # Sample data
