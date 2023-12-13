@@ -30,6 +30,7 @@ are functions (or arrays in discrete cases) representing the input image and the
 
 
 st.header("Stochastic gradient descent")
+st.image("./assets/sgd.gif", caption="Stochastic gradient descent convergence", use_column_width=True)
 st.markdown(
     """
 > **Definition 1.** The random vector $ u^k $ is designated as the stochastic gradient of the function $ f(x) $ at the point $ x = x^k $ if
