@@ -54,5 +54,5 @@ if uploaded_photo is not None:
 
             st.write("Predicted Class:", classes[predicted_class])
 
-            for lable, value in zip(classes, output[0][0]):
-                st.write(lable, value)
+            #for lable, value in zip(classes, output[0][0]):
+            #    st.write(lable, value)
